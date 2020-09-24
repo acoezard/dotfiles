@@ -1,0 +1,28 @@
+{
+	"python.pythonPath": "/usr/bin/python3",
+	"javascript.validate.enable": false,
+
+	"kite.showWelcomeNotificationOnStartup": false,
+	"prettier.useTabs": true,
+	"atomKeymap.promptV3Features": true,
+
+	"workbench.colorTheme": "Atom One Dark",
+	"terminal.integrated.fontSize": 14,
+
+	"editor.fontFamily": "Fira Code",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 14,
+	"editor.lineHeight": 34,
+	"editor.fontWeight": "400",
+	"editor.tabSize": 2,
+	"editor.cursorStyle": "line",
+	"editor.insertSpaces": false,
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.multiCursorModifier": "ctrlCmd",
+
+	"files.autoSave": "off",
+	"explorer.confirmDelete": false,
+	"workbench.iconTheme": "material-icon-theme",
+	"liveServer.settings.donotShowInfoMsg": true
+}
