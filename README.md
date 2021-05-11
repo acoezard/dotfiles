@@ -1,10 +1,29 @@
-# Setup
+# dotfiles
 
 Tout ce dont j'ai besoin pour faire d'Ubuntu un workspace agréable après une nouvelle installation.
 
-## Sommaire
+## Ma machine
 
-1. [Les fichiers de configuration](./docs/configs.md)
-2. [Les polices d'écriture](./docs/fonts.md)
-3. [Les logiciels](./docs/softwares.md)
-4. [Les notes importantes](./docs/memos.md)
+```console
+~$ neofetch
+            .-/+oossssoo+/-.               axelcoezard@laptop
+        `:+ssssssssssssssssss+:`           ------------------
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 20.04.2 LTS x86_64
+    .ossssssssssssssssssdMMMNysssso.       Host: VivoBook S15 X530UN 1.0
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 5.4.0-72-generic
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 3 hours, 23 mins
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 2096 (dpkg), 19 (snap)
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.0.17
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1600x900, 1920x1080
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   DE: GNOME
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Mutter
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   WM Theme: Adwaita
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: Yaru [GTK2/3]
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Icons: Yaru [GTK2/3]
+  +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: gnome-terminal
+   /ssssssssssshdmNNNNmyNMMMMhssssss/      CPU: Intel i7-8550U (8) @ 4.000GHz
+    .ossssssssssssssssssdMMMNysssso.       GPU: NVIDIA GeForce MX150
+      -+sssssssssssssssssyyyssss+-         GPU: Intel UHD Graphics 620
+        `:+ssssssssssssssssss+:`           Memory: 5899MiB / 11863MiB
+            .-/+oossssoo+/-.
+```
