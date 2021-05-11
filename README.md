@@ -2,6 +2,18 @@
 
 Tout ce dont j'ai besoin pour faire d'Ubuntu un workspace agréable après une nouvelle installation.
 
+[![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/ctrl-c-ctrl-v.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
+
+## Mon environement
+
+| Outil                                     | Version   |
+| :---------------------------------------- | :-------- |
+| [Ubuntu](https://ubuntu.com/download)     | `v20.04`  |
+| [VS Code](https://code.visualstudio.com/) | `v1.56.0` |
+| [Node.js](https://nodejs.org/en/)         | `v12.19`  |
+
 ## Ma machine
 
 ```console
