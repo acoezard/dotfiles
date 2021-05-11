@@ -6,11 +6,11 @@ Tout ce dont j'ai besoin pour faire d'Ubuntu un workspace agréable après une n
 
 ## Mon environement
 
-|             | Nom                                                  | Version   |
+|             |                                                      |           |
 | :---------- | :--------------------------------------------------- | --------- |
 | **Os**      | [Ubuntu](https://ubuntu.com/download)                | `v20.04 ` |
 | **Shell**   | [Bash](#)                                            | `v5.0.17` |
-|             | [Git](https://git-scm.com/)                          | `v2.25.1` |
+| **Tool**    | [Git](https://git-scm.com/)                          | `v2.25.1` |
 | **Ide**     | [Visual Studio Code](https://code.visualstudio.com/) | `v1.56.0` |
 | **Runtime** | [Node.js](https://nodejs.org/en/)                    | `v12.19`  |
 
