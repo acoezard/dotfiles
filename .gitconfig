@@ -1,0 +1,9 @@
+[user]
+	email = axel.coezard@gmail.com
+	name = Axel Coézard
+
+[push]
+	default = simple
+
+[init]
+	defaultBranch = main
