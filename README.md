@@ -18,18 +18,18 @@ Tout ce dont j'ai besoin pour faire d'Ubuntu/MacOS un workspace agréable après
 Pour préparer le nouvel OS, et nettoyer la racine des anciens fichiers de configuration,
 il faut executer la commande suivante:
 
-```make
-	make
+```sh
+make
 ```
 
 Sinon, pour seulement nettoyer la racine des anciens fichiers de configuration:
 
-```make
-	make clean
+```sh
+make clean
 ```
 
 Enfin, pour seulement copier les nouveaux fichiers de configuration à la racine:
 
-```make
-	make copy
+```sh
+make copy
 ```
