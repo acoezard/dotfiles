@@ -12,3 +12,9 @@ Tout ce dont j'ai besoin pour faire d'Ubuntu/MacOS un workspace agréable après
 | **Shell**   | [Zsh](https://www.zsh.org/)                          | `v5.8`    |
 | **Tool**    | [Git](https://git-scm.com/)                          | `v2.25.1` |
 | **Ide**     | [Vim](https://www.vim.org/)                          | `v8.0`    |
+
+## Installation
+
+```makefile
+make
+```
