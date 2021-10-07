@@ -34,4 +34,5 @@ alias ginit="git init"
 alias gadd="git add ."
 alias gcommit="git commit -a"
 alias gstatus="git status"
+alias gpush="git push"
 
