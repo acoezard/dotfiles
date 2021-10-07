@@ -6,4 +6,4 @@
 	default = simple
 
 [init]
-	defaultBranch = main
+	defaultBranch = master

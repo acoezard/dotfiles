@@ -1,4 +1,16 @@
 # -----------------------------------------------------------------------------
+# Variables d'environements
+# -----------------------------------------------------------------------------
+export HISTSIZE=1000
+export HISTFILESIZE=2000
+
+export LANG=fr_FR.UTF8
+export LC_ALL=fr_FR.UTF8
+
+export USER="acoezard"
+export MAIL="acoezard@student.42.fr"
+
+# -----------------------------------------------------------------------------
 # Options basiques
 # -----------------------------------------------------------------------------
 setopt EXTENDED_HISTORY
