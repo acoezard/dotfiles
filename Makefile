@@ -7,13 +7,20 @@ SRCS =	.vimrc \
 
 DESTS = $(addprefix ~/, ${SRCS})
 
-all: clean copy
-		
+all: clean copy update install
+
 clean:
 	rm -rf ${DESTS}
 
 copy: ${SRCS}
 	cp -r ${SRCS} ~/
 
+update:
+	apt -y update
+	apt -y upgrade
 
-.PHONY: all clean copy
+install:
+	apt install -y zsh
+	chsh -s /bin/zsh
+
+.PHONY: all clean copy update install
