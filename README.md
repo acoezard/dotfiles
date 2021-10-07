@@ -1,8 +1,8 @@
 # dotfiles
 
-[![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
+Tout ce dont j'ai besoin pour faire d'Ubuntu/MacOS un workspace agréable après une nouvelle installation.
 
-Tout ce dont j'ai besoin pour faire d'Ubuntu un workspace agréable après une nouvelle installation.
+[![forthebadge](https://forthebadge.com/images/badges/ctrl-c-ctrl-v.svg)](https://forthebadge.com)
 
 ## Mon environement
 
