@@ -10,6 +10,8 @@ export LC_ALL=fr_FR.UTF8
 export USER="acoezard"
 export MAIL="acoezard@student.42.fr"
 
+export PATH=$PATH:/usr/local/go/bin
+
 # -----------------------------------------------------------------------------
 # Options basiques
 # -----------------------------------------------------------------------------
