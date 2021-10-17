@@ -13,6 +13,8 @@ clean:
 	rm -rf ${DESTS}
 
 copy: ${SRCS}
+	git submodule init
+	git submobule update
 	cp -r ${SRCS} ~/
 
 update:
