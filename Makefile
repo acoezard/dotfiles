@@ -14,7 +14,7 @@ clean:
 
 copy: ${SRCS}
 	git submodule init
-	git submobule update
+	git submodule update
 	cp -r ${SRCS} ~/
 
 update:
