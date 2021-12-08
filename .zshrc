@@ -45,6 +45,7 @@ alias lla="ls -la"
 # Alias pour Git
 # -----------------------------------------------------------------------------
 alias ginit="git init"
+alias gclone="git clone"
 alias gadd="git add ."
 alias gcommit="git commit -a"
 alias gstatus="git status"
