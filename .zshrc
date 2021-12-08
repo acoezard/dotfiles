@@ -4,9 +4,6 @@
 export HISTSIZE=1000
 export HISTFILESIZE=2000
 
-export LANG=fr_FR.UTF8
-export LC_ALL=fr_FR.UTF8
-
 export USER="acoezard"
 export MAIL="acoezard@student.42nice.fr"
 
@@ -40,6 +37,8 @@ alias ll="ls -l"
 alias lh="ls -lh"
 alias la="ls -a"
 alias lla="ls -la"
+
+alias builder="bash ~/builder.sh"
 
 # -----------------------------------------------------------------------------
 # Alias pour Git
