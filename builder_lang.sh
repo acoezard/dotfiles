@@ -81,16 +81,16 @@ echo	-e	"OBJS\t\t\t:=\t\$(addprefix \${OBJECTS}/, \$(SRCS:.$c_lang=.o))\n" >> Ma
 echo	-e	"CC\t\t\t\t:=\t$c_compiler" >> Makefile
 echo	-e	"CFLAGS\t\t\t:=\t$c_flags" >> Makefile
 echo	-e	"CINCLUDES\t\t:=\t-I \${INCLUDES}\n" >> Makefile
-echo	-e	"GREEN\t\t\t:=\t\"\\033[1;32m\"" >> Makefile
-echo	-e	"BLUE\t\t\t:=\t\"\\033[1;36m\"" >> Makefile
-echo	-e	"EOC\t\t\t\t:=\t\"\\033[0m\"\n" >> Makefile
+echo	-e	"GREEN\t\t\t:=\t\"\\\033[1;32m\"" >> Makefile
+echo	-e	"BLUE\t\t\t:=\t\"\\\033[1;36m\"" >> Makefile
+echo	-e	"EOC\t\t\t\t:=\t\"\\\033[0m\"\n" >> Makefile
 echo	-e	"\${OBJECTS}/%.o: \${SOURCES}/%.$c_lang" >> Makefile
-echo	-e	"\t@mkdir -p \$(dir \${@})" >> Makefile
+echo	-e	"\t@mkdir -p \$(dir \$@)" >> Makefile
 echo	-e	"\t@echo \"● Compilation de \"\${BLUE}\"\${nodir $<}\"\${EOC}\".\""	>> Makefile
 echo	-e	"\t@\${CC} \${CFLAGS} -o \$@ -c \$< \${CINCLUDES}\n" >> Makefile
 echo	-e	"all: \${NAME}\n" >> Makefile
 echo	-e	"\${NAME}: \${OBJS}" >> Makefile
-echo	-e	"\t@echo \$(GREEN)\"● Compilation de \${NAME}...\"\$(EOC)\"" >> Makefile
+echo	-e	"\t@echo \$(GREEN)\"● Compilation de \${NAME}...\"\$(EOC)" >> Makefile
 echo	-e	"\t@\${CC} \${CFLAGS} -o \${NAME} \${OBJS}\n" >> Makefile
 echo	-e	"clean:" >> Makefile
 echo	-e	"\t@echo \$(GREEN)\"● Suppression des fichiers binaires (.o)...\"\$(EOC)" >> Makefile
@@ -105,6 +105,13 @@ progress_step	4	"Creation des dossiers $sources_folder et $includes_folder"
 mkdir	$sources_folder	$includes_folder >> /dev/null
 
 progress_step	5	"Creation du main.$c_lang"
+touch	$sources_folder/main.$c_lang >> /dev/null
+echo	-e	"#include <iostream>\n" >> $sources_folder/main.$c_lang
+echo	-e	"int main(void)" >> $sources_folder/main.$c_lang
+echo	-e	"{" >> $sources_folder/main.$c_lang
+echo	-e	"\tstd::cout << \"Hello World!\" << std::endl;" >> $sources_folder/main.$c_lang
+echo	-e	"\treturn (0);" >> $sources_folder/main.$c_lang
+echo	-e	"}\n" >> $sources_folder/main.$c_lang
 
 progress_end
 
