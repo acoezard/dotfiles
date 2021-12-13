@@ -38,7 +38,8 @@ alias lh="ls -lh"
 alias la="ls -a"
 alias lla="ls -la"
 
-alias builder="bash ~/builder.sh"
+alias buildc="bash ~/builder_lang.sh c clang"
+alias buildcpp="bash ~/builder_lang.sh cpp clang++"
 
 # -----------------------------------------------------------------------------
 # Alias pour Git

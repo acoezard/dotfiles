@@ -76,7 +76,7 @@ echo	-e	"NAME\t\t\t:=\t$project_name\n" >> Makefile
 echo	-e	"SOURCES\t\t\t:=\t$sources_folder" >> Makefile
 echo	-e	"INCLUDES\t\t:=\t$includes_folder" >> Makefile
 echo	-e	"OBJECTS\t\t\t:=\t$bin_folder\n" >> Makefile
-echo	-e	"SRCS\t\t\t:=\t$project_name.$c_lang\n" >> Makefile
+echo	-e	"SRCS\t\t\t:=\tmain.$c_lang\n" >> Makefile
 echo	-e	"OBJS\t\t\t:=\t\$(addprefix \${OBJECTS}/, \$(SRCS:.$c_lang=.o))\n" >> Makefile
 echo	-e	"CC\t\t\t\t:=\t$c_compiler" >> Makefile
 echo	-e	"CFLAGS\t\t\t:=\t$c_flags" >> Makefile

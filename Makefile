@@ -3,7 +3,8 @@ SRCS =	.vimrc \
 		.gitconfig \
 		.gitignore \
 		.vim \
-		.zsh
+		.zsh \
+		builder_lang.sh
 
 DESTS = $(addprefix ~/, ${SRCS})
 
@@ -20,9 +21,9 @@ copy: ${SRCS}
 update:
 	apt -y update
 	apt -y upgrade
+	apt install -y zsh
 
 install:
-	apt install -y zsh
 	chsh -s /bin/zsh
 
 .PHONY: all clean copy update install
