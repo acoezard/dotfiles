@@ -20,14 +20,15 @@ setopt interactivecomments
 # -----------------------------------------------------------------------------
 ZSH_THEME="TheOne"
 
-PROMPT="%B%F{blue}%n%b@%B%m%b:%F{yellow}%~%f "
+# username@hostname => %B%F{blue}%n%b@%B%m%b:
+PROMPT="%B%F{blue}%~%f${vcs_info_msg_0_}%f"$'\n'"%F{green}λ%F{250} "
+RPROMPT=''
 
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
-RPROMPT='${vcs_info_msg_0_}%f'
-zstyle ':vcs_info:git:*' formats '%F{240}(%b) %B%F{green}%r'
+zstyle ':vcs_info:git:*' formats '%B%F{green} git(%F{255}%b%B%F{green})%f'
 zstyle ':vcs_info:*' enable git
 
 # -----------------------------------------------------------------------------
