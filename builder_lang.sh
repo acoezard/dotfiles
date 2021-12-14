@@ -86,7 +86,7 @@ echo	-e	"BLUE\t\t\t:=\t\"\\\033[1;36m\"" >> Makefile
 echo	-e	"EOC\t\t\t\t:=\t\"\\\033[0m\"\n" >> Makefile
 echo	-e	"\${OBJECTS}/%.o: \${SOURCES}/%.$c_lang" >> Makefile
 echo	-e	"\t@mkdir -p \$(dir \$@)" >> Makefile
-echo	-e	"\t@echo \"● Compilation de \"\${BLUE}\"\${nodir $<}\"\${EOC}\".\""	>> Makefile
+echo	-e	"\t@echo \"● Compilation de \"\${BLUE}\"\${notdir $<}\"\${EOC}\".\""	>> Makefile
 echo	-e	"\t@\${CC} \${CFLAGS} -o \$@ -c \$< \${CINCLUDES}\n" >> Makefile
 echo	-e	"all: \${NAME}\n" >> Makefile
 echo	-e	"\${NAME}: \${OBJS}" >> Makefile
