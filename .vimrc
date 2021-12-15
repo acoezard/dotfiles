@@ -58,6 +58,7 @@ syntax on
 set termguicolors
 set t_Co=256
 set background=dark
+set list listchars=tab:→\ ,eol:↵,space:·,extends:»,precedes:«
 colorscheme onedark
 
 " -----------------------------------------------------------------------------
