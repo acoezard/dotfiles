@@ -19,7 +19,8 @@ set encoding=utf-8
 set title
 set noshowmode
 set showcmd
-set mouse=nicr
+set mouse=a
+set clipboard^=unnamed,unnamedplus
 
 " -----------------------------------------------------------------------------
 " Options de l'editeur
