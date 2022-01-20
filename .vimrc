@@ -77,17 +77,22 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_c_checkers = ['norminette', 'gcc']
 let g:syntastic_aggregate_errors = 1
-let g:syntastic_c_norminette_exec = 'norminette'
-let g:syntastic_c_include_dirs = ['include', '../include', '../../include']
-let g:syntastic_c_norminette_args = '-R CheckTopCommentHeader'
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
+
+let g:syntastic_c_checkers = ['norminette', 'gcc']
+let g:syntastic_c_norminette_exec = 'norminette'
+let g:syntastic_c_include_dirs = ['includes']
+let g:syntastic_c_norminette_args = '-R CheckTopCommentHeader'
 let g:syntastic_c_compiler_options = "-Wall -Wextra -Werror"
 let g:c_syntax_for_h = 1
+
+let g:syntastic_cpp_compiler = "clang++"
+let g:syntastic_cpp_compiler_options = "-Wall -Wextra -Werror -std=c++98"
+let g:syntastic_cpp_check_header = 1
 
 " -----------------------------------------------------------------------------
 " Options de NERDTree
