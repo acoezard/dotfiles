@@ -4,7 +4,9 @@ SRCS =	.vimrc \
 		.gitignore \
 		.vim \
 		.zsh \
-		builder_lang.sh
+		builder_lang.sh \
+		free_space.sh \
+		show_space.sh
 
 DESTS = $(addprefix ~/, ${SRCS})
 
