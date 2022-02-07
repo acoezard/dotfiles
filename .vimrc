@@ -28,8 +28,10 @@ set clipboard^=unnamed,unnamedplus
 set termencoding=utf-8
 set number
 set colorcolumn=80
-set tabstop=4 
-set smarttab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab
 set autoindent
 set showmatch
 			
@@ -94,13 +96,14 @@ let g:syntastic_cpp_compiler = "clang++"
 let g:syntastic_cpp_compiler_options = "-Wall -Wextra -Werror -std=c++98"
 let g:syntastic_cpp_check_header = 1
 
+
 " -----------------------------------------------------------------------------
 " Options de NERDTree
 " -----------------------------------------------------------------------------
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeGitStatusWithFlags = 1
-let g:NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
+let g:NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$', '\.git$', '\.o$']
 
 " -----------------------------------------------------------------------------
 " Options de Airline
