@@ -16,8 +16,6 @@ clean:
 	rm -rf ${DESTS}
 
 copy: ${SRCS}
-	git submodule init
-	git submodule update
 	cp -r ${SRCS} ~/
 
 update:
@@ -26,6 +24,8 @@ update:
 	apt install -y zsh
 
 install:
+	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	chsh -s /bin/zsh
 
 .PHONY: all clean copy update install

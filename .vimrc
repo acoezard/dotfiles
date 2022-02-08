@@ -7,9 +7,6 @@ set nocompatible
 " Parametre Pathogen pour gerer les plugins
 " -----------------------------------------------------------------------------
 filetype off
-
-execute pathogen#infect()
-
 filetype plugin indent on
 
 " -----------------------------------------------------------------------------
@@ -63,6 +60,22 @@ set t_Co=256
 set background=dark
 set list listchars=tab:→\ ,eol:↵,space:·,extends:»,precedes:«
 colorscheme onedark
+
+
+" -----------------------------------------------------------------------------
+" Options du plugin Manager et ses plugins
+" -----------------------------------------------------------------------------
+call plug#begin()
+
+Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdtree'
+Plug 'alexandregv/norminette-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'airblade/vim-gitgutter'
+Plug 'sheerun/vim-polyglot'
+Plug 'raimondi/delimitmate'
+
+call plug#end()
 
 " -----------------------------------------------------------------------------
 " Commandes automatiaues
