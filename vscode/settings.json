@@ -1,6 +1,9 @@
 {
-	"workbench.colorTheme": "One Dark Pro",
+	"workbench.colorTheme": "Tokyo Night",
 	"workbench.iconTheme": "material-icon-theme",
+
+	"42header.username": "acoezard",
+	"42header.email": "acoezard@student.42nice.fr",
 
 	"prettier.useTabs": true,
 
@@ -13,19 +16,25 @@
 	"editor.detectIndentation": false,
 	"editor.cursorStyle": "line",
 	"editor.insertSpaces": false,
-	"editor.formatOnSave": true,
-	"editor.formatOnPaste": true,
+	"editor.formatOnSave": false,
+	"editor.formatOnPaste": false,
 	"editor.renderWhitespace": "all",
+	"editor.inlineSuggest.enabled": true,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.cursorSmoothCaretAnimation": true,
+	"editor.suggestSelection": "first",
 
 	"files.trimTrailingWhitespace": true,
 	"files.insertFinalNewline": true,
 	"files.autoSave": "off",
 
-	"javascript.validate.enable": false,
-	"kite.showWelcomeNotificationOnStartup": false,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
-	"atomKeymap.promptV3Features": true,
-	"editor.multiCursorModifier": "ctrlCmd",
-	"javascript.updateImportsOnFileMove.enabled": "always"
+
+	"github.copilot.enable": { "*": true },
+
+	"security.workspace.trust.untrustedFiles": "open",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
 }
+
