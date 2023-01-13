@@ -8,6 +8,7 @@ export USER="acoezard"
 export MAIL="acoezard@student.42nice.fr"
 
 export PATH=$PATH:/usr/local/go/bin
+export GIT_EDITOR=vim
 
 # -----------------------------------------------------------------------------
 # Options basiques
