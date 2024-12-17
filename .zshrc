@@ -7,7 +7,7 @@ export HISTFILESIZE=2000
 export USER="acoezard"
 export MAIL="acoezard@student.42nice.fr"
 
-export PATH=$PATH:/usr/local/go/bin
+export EDITOR=vi
 export GIT_EDITOR=vim
 
 # -----------------------------------------------------------------------------
@@ -15,41 +15,37 @@ export GIT_EDITOR=vim
 # -----------------------------------------------------------------------------
 setopt EXTENDED_HISTORY
 setopt interactivecomments
+set -o vi
 
 # -----------------------------------------------------------------------------
 # Options pour gerer l'apparence de Zsh
 # -----------------------------------------------------------------------------
-ZSH_THEME="TheOne"
 
-# username@hostname => %B%F{blue}%n%b@%B%m%b:
-PROMPT="%B%F{blue}%~%f${vcs_info_msg_0_}%f"$'\n'"%F{green}λ%F{250} "
+git_branch() {
+  local branch
+  local changes=""
+  local modified_count
+
+  # Récupérer la branche actuelle
+  branch=$(git symbolic-ref --short HEAD 2>/dev/null || git rev-parse --short HEAD 2>/dev/null)
+
+  # Compter le nombre de fichiers modifiés (staged et unstaged)
+  modified_count=$(git status --short 2>/dev/null | wc -l | tr -d ' ')
+
+  # Si des modifications existent, ajoute "+n" au prompt
+  if [[ $modified_count -gt 0 ]]; then
+    changes="%F{yellow}+${modified_count}%f"
+  fi
+
+  # Afficher le prompt avec la branche et le nombre de fichiers modifiés
+  if [[ -n "$branch" ]]; then
+    echo "%F{green}git(%F{255}$branch%F{green})%f$changes"
+  fi
+}
+
+setopt prompt_subst
+
+PROMPT='%F{blue}%~%f $(git_branch)'$'\n''%F{green}λ%F{reset_color} '
 RPROMPT=''
 
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-zstyle ':vcs_info:git:*' formats '%B%F{green} git(%F{255}%b%B%F{green})%f'
-zstyle ':vcs_info:*' enable git
-
-# -----------------------------------------------------------------------------
-# Alias basiques
-# -----------------------------------------------------------------------------
-alias ll="ls -l"
-alias lh="ls -lh"
-alias la="ls -a"
-alias lla="ls -la"
-
-alias buildc="bash ~/builder_lang.sh c clang"
-alias buildcpp="bash ~/builder_lang.sh cpp clang++"
-
-# -----------------------------------------------------------------------------
-# Alias pour Git
-# -----------------------------------------------------------------------------
-alias ginit="git init"
-alias gclone="git clone"
-alias gadd="git add ."
-alias gcommit="git commit -a"
-alias gstatus="git status"
-alias gpush="git push"
 
